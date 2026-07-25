@@ -206,68 +206,76 @@ The dashboard uses dynamic DAX calculations for KPI reporting.
 
 # 📂 Repository Structure
 
+## 📁 Repository Structure
+
 ```text
-HR-Analytics-Dashboard
-│
-├── HR_Analytics_Dashboard.pbix
-│
-├── Dataset
-│   └── HR_Employee_Dataset.xlsx
-│
-├── Screenshots
-│   ├── ExecutiveSummary.png
-│   ├── WorkforceOverview.png
-│   ├── AttritionAnalysis.png
-│   ├── CompensationAnalysis.png
-│   ├── PerformanceAnalysis.png
-│   └── KeyInsights.png
-│
+HR-Analytics-Dashboard/
+├── DAX/
+│   ├── Additional_DAX_Measures.md
+│   ├── Attrition_DAX_Measures.md
+│   ├── Employee_DAX_Measures.md
+│   ├── Experience_and_Utility_DAX_Measures.md
+│   └── Salary_DAX_Measures.md
+├── Dataset/
+│   ├── HR_Employee.pbix
+│   └── .md
+├── Screenshots/
+│   ├── Attrition Analysis.png
+│   ├── Compensation Analysis.png
+│   ├── Executive Summary.png
+│   ├── Key Insights & Recommendations.png
+│   ├── Performance Analysis.png
+│   └── Workforce Overview.png
+├── SQL/
+│   ├── Advance Analysis
+│   ├── Attrition Analysis
+│   ├── Data Exploration
+│   ├── Database Setup
+│   ├── Department Analysis
+│   ├── Employee Overview
+│   ├── Experience Analysis
+│   ├── Job Role Analysis
+│   └── Salary Analysis
+├── HR_Employee.pbix
 └── README.md
 ```
-
 ---
 
 # 📸 Dashboard Preview
 
 ## Executive Summary
 
-![Executive Summary](<img width="1297" height="721" alt="Executive Summary" src="https://github.com/user-attachments/assets/15febdd0-64c2-4c7a-8751-935e85958fac" />
-)
+![Executive Summary](Screenshots/Executive%20Summary.png)
 
 ---
 
 ## Workforce Overview
 
-![Workforce Overview](<img width="1112" height="626" alt="Workforce Overview" src="https://github.com/user-attachments/assets/a905d05e-016e-429c-a87f-6d58f90016c3" />
-)
+![Workforce Overview](Screenshots/Workforce%20Overview.png)
 
 ---
 
 ## Attrition Analysis
 
-![Attrition Analysis](<img width="1115" height="627" alt="Attrition Analysis" src="https://github.com/user-attachments/assets/ed5b954b-5746-41ea-8504-ac1891834d6a" />
-)
+![Attrition Analysis](Screenshots/Attrition%20Analysis.png)
 
 ---
 
 ## Compensation Analysis
 
-![Compensation Analysis](<img width="1113" height="625" alt="Compensation Analysis" src="https://github.com/user-attachments/assets/59591dd8-b796-4842-88ea-29c7a7906f2b" />
-)
+![Compensation Analysis](Screenshots/Compensation%20Analysis.png)
 
 ---
 
 ## Performance Analysis
 
-![Performance Analysis](<img width="1108" height="624" alt="Performance Analysis" src="https://github.com/user-attachments/assets/f07f73b3-b275-4659-89bf-36aabebe091e" />
-)
+![Performance Analysis](Screenshots/Performance%20Analysis.png)
 
 ---
 
 ## Key Insights & Recommendations
 
-![Key Insights](<img width="1112" height="636" alt="Key Insights   Recommendations" src="https://github.com/user-attachments/assets/e28445d0-0344-4ba5-a424-aab0b0e1b9f4" />
-)
+![Key Insights & Recommendations](Screenshots/Key%20Insights%20%26%20Recommendations.png)
 
 ---
 
