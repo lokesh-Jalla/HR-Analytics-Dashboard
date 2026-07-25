@@ -1,0 +1,59 @@
+/*===========================================================
+ File Name : 05_JobRole_Analysis.sql
+ Project   : HR Analytics Dashboard
+ Objective : Job Role Analysis
+===========================================================*/
+
+------------------------------------------------------------
+-- Query 1 : Total Employees by Job Role
+------------------------------------------------------------
+SELECT
+    JobRole,
+    COUNT(*) AS TotalEmployees
+FROM HR_Employee
+GROUP BY JobRole
+ORDER BY TotalEmployees DESC;
+
+
+------------------------------------------------------------
+-- Query 2 : Average Monthly Income by Job Role
+------------------------------------------------------------
+SELECT
+    JobRole,
+    ROUND(AVG(MonthlyIncome),2) AS AverageSalary
+FROM HR_Employee
+GROUP BY JobRole
+ORDER BY AverageSalary DESC;
+
+
+------------------------------------------------------------
+-- Query 3 : Average Job Satisfaction by Job Role
+------------------------------------------------------------
+SELECT
+    JobRole,
+    ROUND(AVG(JobSatisfaction),2) AS AverageJobSatisfaction
+FROM HR_Employee
+GROUP BY JobRole
+ORDER BY AverageJobSatisfaction DESC;
+
+
+------------------------------------------------------------
+-- Query 4 : Average Performance Rating by Job Role
+------------------------------------------------------------
+SELECT
+    JobRole,
+    ROUND(AVG(PerformanceRating),2) AS AveragePerformanceRating
+FROM HR_Employee
+GROUP BY JobRole
+ORDER BY AveragePerformanceRating DESC;
+
+
+------------------------------------------------------------
+-- Query 5 : Average Years at Company by Job Role
+------------------------------------------------------------
+SELECT
+    JobRole,
+    ROUND(AVG(YearsAtCompany),2) AS AverageYearsAtCompany
+FROM HR_Employee
+GROUP BY JobRole
+ORDER BY AverageYearsAtCompany DESC;

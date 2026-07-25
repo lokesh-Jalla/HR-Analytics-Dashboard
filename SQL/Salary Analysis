@@ -1,0 +1,65 @@
+/*===========================================================
+ File Name : 06_Salary_Analysis.sql
+ Project   : HR Analytics Dashboard
+ Objective : Salary Analysis
+===========================================================*/
+
+------------------------------------------------------------
+-- Query 1 : Company Salary Statistics
+------------------------------------------------------------
+SELECT
+    MIN(MonthlyIncome) AS MinimumSalary,
+    MAX(MonthlyIncome) AS MaximumSalary,
+    ROUND(AVG(MonthlyIncome),2) AS AverageSalary
+FROM HR_Employee;
+
+
+------------------------------------------------------------
+-- Query 2 : Average Salary by Education Field
+------------------------------------------------------------
+SELECT
+    EducationField,
+    ROUND(AVG(MonthlyIncome),2) AS AverageSalary
+FROM HR_Employee
+GROUP BY EducationField
+ORDER BY AverageSalary DESC;
+
+
+------------------------------------------------------------
+-- Query 3 : Salary Distribution by Gender
+------------------------------------------------------------
+SELECT
+    Gender,
+    ROUND(AVG(MonthlyIncome),2) AS AverageSalary
+FROM HR_Employee
+GROUP BY Gender
+ORDER BY AverageSalary DESC;
+
+
+------------------------------------------------------------
+-- Query 4 : Top 10 Highest Paid Employees
+------------------------------------------------------------
+SELECT TOP 10
+    EmployeeNumber,
+    JobRole,
+    Department,
+    MonthlyIncome
+FROM HR_Employee
+ORDER BY MonthlyIncome DESC;
+
+
+------------------------------------------------------------
+-- Query 5 : Employees Earning Above Company Average Salary
+------------------------------------------------------------
+SELECT
+    EmployeeNumber,
+    JobRole,
+    Department,
+    MonthlyIncome
+FROM HR_Employee
+WHERE MonthlyIncome >
+(
+    SELECT AVG(MonthlyIncome)
+    FROM HR_Employee
+)
+ORDER BY MonthlyIncome DESC;

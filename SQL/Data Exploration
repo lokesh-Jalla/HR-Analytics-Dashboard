@@ -1,0 +1,53 @@
+/*===========================================================
+ File Name : 02_Data_Exploration.sql
+ Project   : HR Analytics Dashboard
+ Objective : Data Exploration
+===========================================================*/
+
+------------------------------------------------------------
+-- Query 1 : Display First 10 Records
+------------------------------------------------------------
+SELECT TOP 10 *
+FROM HR_Employee;
+
+
+------------------------------------------------------------
+-- Query 2 : Total Number of Records
+------------------------------------------------------------
+SELECT
+    COUNT(*) AS TotalRecords
+FROM HR_Employee;
+
+
+------------------------------------------------------------
+-- Query 3 : View All Column Names and Data Types
+------------------------------------------------------------
+SELECT
+    COLUMN_NAME,
+    DATA_TYPE
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'HR_Employee';
+
+
+------------------------------------------------------------
+-- Query 4 : Count Distinct Values in Key Columns
+------------------------------------------------------------
+SELECT
+    COUNT(DISTINCT Department) AS Departments,
+    COUNT(DISTINCT JobRole) AS JobRoles,
+    COUNT(DISTINCT EducationField) AS EducationFields,
+    COUNT(DISTINCT BusinessTravel) AS BusinessTravelTypes
+FROM HR_Employee;
+
+
+------------------------------------------------------------
+-- Query 5 : Check for NULL Values
+------------------------------------------------------------
+SELECT
+    SUM(CASE WHEN EmployeeNumber IS NULL THEN 1 ELSE 0 END) AS EmployeeNumber_NULL,
+    SUM(CASE WHEN Age IS NULL THEN 1 ELSE 0 END) AS Age_NULL,
+    SUM(CASE WHEN Department IS NULL THEN 1 ELSE 0 END) AS Department_NULL,
+    SUM(CASE WHEN JobRole IS NULL THEN 1 ELSE 0 END) AS JobRole_NULL,
+    SUM(CASE WHEN MonthlyIncome IS NULL THEN 1 ELSE 0 END) AS MonthlyIncome_NULL,
+    SUM(CASE WHEN Attrition IS NULL THEN 1 ELSE 0 END) AS Attrition_NULL
+FROM HR_Employee;

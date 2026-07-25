@@ -1,0 +1,50 @@
+/*===========================================================
+ File Name : 08_Experience_Analysis.sql
+ Project   : HR Analytics Dashboard
+ Objective : Experience Analysis
+===========================================================*/
+
+------------------------------------------------------------
+-- Query 1 : Average Total Working Years
+------------------------------------------------------------
+SELECT
+    ROUND(AVG(TotalWorkingYears),2) AS AverageWorkingYears
+FROM HR_Employee;
+
+
+------------------------------------------------------------
+-- Query 2 : Average Years at Company
+------------------------------------------------------------
+SELECT
+    ROUND(AVG(YearsAtCompany),2) AS AverageYearsAtCompany
+FROM HR_Employee;
+
+
+------------------------------------------------------------
+-- Query 3 : Average Years Since Last Promotion
+------------------------------------------------------------
+SELECT
+    ROUND(AVG(YearsSinceLastPromotion),2) AS AverageYearsSinceLastPromotion
+FROM HR_Employee;
+
+
+------------------------------------------------------------
+-- Query 4 : Average Years with Current Manager
+------------------------------------------------------------
+SELECT
+    ROUND(AVG(YearsWithCurrManager),2) AS AverageYearsWithCurrentManager
+FROM HR_Employee;
+
+
+------------------------------------------------------------
+-- Query 5 : Employees Waiting More Than 10 Years for Promotion
+------------------------------------------------------------
+SELECT
+    EmployeeNumber,
+    JobRole,
+    Department,
+    YearsSinceLastPromotion,
+    YearsAtCompany
+FROM HR_Employee
+WHERE YearsSinceLastPromotion >= 10
+ORDER BY YearsSinceLastPromotion DESC;

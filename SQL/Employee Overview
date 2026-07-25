@@ -1,0 +1,57 @@
+/*===========================================================
+  File Name : 03_Employee_Overview.sql
+  Project   : HR Analytics Dashboard
+  Objective : Employee Overview Analysis
+===========================================================*/
+
+------------------------------------------------------------
+-- Query 1 : Total Employees
+------------------------------------------------------------
+SELECT
+    COUNT(*) AS TotalEmployees
+FROM HR_Employee;
+
+
+------------------------------------------------------------
+-- Query 2 : Active Employees vs Attrition Employees
+------------------------------------------------------------
+SELECT
+    CASE
+        WHEN Attrition = 1 THEN 'Attrition Employees'
+        ELSE 'Active Employees'
+    END AS EmployeeStatus,
+    COUNT(*) AS EmployeeCount
+FROM HR_Employee
+GROUP BY Attrition;
+
+
+------------------------------------------------------------
+-- Query 3 : Gender Distribution
+------------------------------------------------------------
+SELECT
+    Gender,
+    COUNT(*) AS Employees
+FROM HR_Employee
+GROUP BY Gender
+ORDER BY Employees DESC;
+
+
+------------------------------------------------------------
+-- Query 4 : Marital Status Distribution
+------------------------------------------------------------
+SELECT
+    MaritalStatus,
+    COUNT(*) AS Employees
+FROM HR_Employee
+GROUP BY MaritalStatus
+ORDER BY Employees DESC;
+
+
+------------------------------------------------------------
+-- Query 5 : Employee Age Statistics
+------------------------------------------------------------
+SELECT
+    MIN(Age) AS MinimumAge,
+    MAX(Age) AS MaximumAge,
+    ROUND(AVG(CAST(Age AS FLOAT)),2) AS AverageAge
+FROM HR_Employee;

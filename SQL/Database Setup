@@ -1,0 +1,47 @@
+/*===========================================================
+ File Name : 01_Database_Setup.sql
+ Project   : HR Analytics Dashboard
+ Objective : Database Setup
+===========================================================*/
+
+------------------------------------------------------------
+-- Query 1 : Create Database
+------------------------------------------------------------
+IF NOT EXISTS
+(
+    SELECT *
+    FROM sys.databases
+    WHERE name = 'HR_Analytics'
+)
+BEGIN
+    CREATE DATABASE HR_Analytics;
+END;
+GO
+
+------------------------------------------------------------
+-- Query 2 : Use Database
+------------------------------------------------------------
+USE HR_Analytics;
+GO
+
+------------------------------------------------------------
+-- Query 3 : Verify Database
+------------------------------------------------------------
+SELECT
+    DB_NAME() AS CurrentDatabase;
+GO
+
+------------------------------------------------------------
+-- Query 4 : Verify Imported Tables
+------------------------------------------------------------
+SELECT
+    TABLE_NAME
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE';
+GO
+
+------------------------------------------------------------
+-- Query 5 : View Table Structure
+------------------------------------------------------------
+EXEC sp_help 'HR_Employee';
+GO

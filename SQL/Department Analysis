@@ -1,0 +1,65 @@
+/*===========================================================
+ File Name : 04_Department_Analysis.sql
+ Project   : HR Analytics Dashboard
+ Objective : Department Analysis
+===========================================================*/
+
+------------------------------------------------------------
+-- Query 1 : Total Employees in Each Department
+------------------------------------------------------------
+SELECT
+    Department,
+    COUNT(*) AS TotalEmployees
+FROM HR_Employee
+GROUP BY Department
+ORDER BY TotalEmployees DESC;
+
+
+------------------------------------------------------------
+-- Query 2 : Attrition Count by Department
+------------------------------------------------------------
+SELECT
+    Department,
+    COUNT(*) AS AttritionEmployees
+FROM HR_Employee
+WHERE Attrition = 1
+GROUP BY Department
+ORDER BY AttritionEmployees DESC;
+
+
+------------------------------------------------------------
+-- Query 3 : Attrition Rate by Department
+------------------------------------------------------------
+SELECT
+    Department,
+    COUNT(*) AS TotalEmployees,
+    SUM(CASE WHEN Attrition = 1 THEN 1 ELSE 0 END) AS AttritionCount,
+    ROUND(
+        SUM(CASE WHEN Attrition = 1 THEN 1.0 ELSE 0 END)
+        *100 / COUNT(*),2
+    ) AS AttritionRate
+FROM HR_Employee
+GROUP BY Department
+ORDER BY AttritionRate DESC;
+
+
+------------------------------------------------------------
+-- Query 4 : Average Monthly Salary by Department
+------------------------------------------------------------
+SELECT
+    Department,
+    ROUND(AVG(MonthlyIncome),2) AS AverageSalary
+FROM HR_Employee
+GROUP BY Department
+ORDER BY AverageSalary DESC;
+
+
+------------------------------------------------------------
+-- Query 5 : Average Years at Company by Department
+------------------------------------------------------------
+SELECT
+    Department,
+    ROUND(AVG(YearsAtCompany),2) AS AvgYearsAtCompany
+FROM HR_Employee
+GROUP BY Department
+ORDER BY AvgYearsAtCompany DESC;
