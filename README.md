@@ -192,7 +192,6 @@ HR-Analytics-Dashboard
 │   └── ...
 │
 ├── Images
-│   ├── Cover.png
 │   ├── ExecutiveSummary.png
 │   ├── WorkforceOverview.png
 │   ├── AttritionAnalysis.png
