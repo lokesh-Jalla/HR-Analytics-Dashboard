@@ -1,178 +1,206 @@
-# 📊 HR Analytics Dashboard | Power BI Business Intelligence Project
+# 📊 HR Analytics Dashboard | Power BI
+
+> An end-to-end HR Analytics Business Intelligence solution built using **Power BI, SQL, DAX, Power Query, and Data Modeling** to transform HR data into actionable business insights.
+
 
 # 📌 Project Overview
 
-The **HR Analytics Dashboard** is an interactive Business Intelligence solution designed to help HR teams monitor workforce performance, employee demographics, attrition trends, compensation, and organizational performance.
+This project analyzes employee workforce data to help HR teams make data-driven decisions regarding workforce planning, employee retention, compensation, and performance.
 
-The dashboard transforms raw HR data into meaningful insights through dynamic visualizations, KPIs, DAX calculations, and interactive filtering to support strategic HR decision-making.
+The dashboard combines interactive visualizations, dynamic KPIs, and business-focused insights into a single reporting solution suitable for HR managers and executive leadership.
 
 ---
 
 # 🎯 Business Objectives
 
-This dashboard helps answer key HR business questions such as:
+The dashboard was designed to answer key HR business questions such as:
 
-- Which departments experience the highest attrition?
-- What factors influence employee retention?
+- How healthy is the current workforce?
+- Which departments experience the highest employee attrition?
 - How is the workforce distributed across departments and experience levels?
-- How are salaries distributed throughout the organization?
-- Which job roles receive the highest compensation?
-- How does employee performance vary across different demographics?
-- What strategic actions can improve employee retention and productivity?
+- Which employees receive the highest compensation?
+- What factors influence employee satisfaction and performance?
+- How can HR improve employee retention?
 
 ---
 
-# 📑 Dashboard Modules
+# 🛠 Technology Stack
 
-## 🏠 1. Executive Summary
+| Technology | Purpose |
+|------------|----------|
+| 📊 Power BI | Dashboard Development |
+| 🗄 SQL | Data Management |
+| ⚡ DAX | Business Calculations |
+| 🔄 Power Query | Data Cleaning & Transformation |
+| ⭐ Data Modeling | Star Schema & Relationships |
 
-Provides a high-level overview of organization-wide HR KPIs.
+---
 
-### KPIs
+# 📑 Dashboard Pages
+
+## 1️⃣ Executive Summary
+
+Provides an organization-wide overview using high-level KPIs and workforce insights.
+
+**Key KPIs**
 
 - Total Employees
 - Attrition Rate
 - Average Monthly Income
 - Job Satisfaction %
 
-### Visuals
-
-- Attrition by Age Group
-- Workforce Distribution by Job Role
-- Attrition by Gender
-- Department Distribution
-- Workforce Experience Distribution
-- Employees vs Salary Band
-
 ---
 
-## 👥 2. Workforce Overview
+## 2️⃣ Workforce Overview
 
 Analyzes employee demographics and workforce composition.
 
-### KPIs
+**Key KPIs**
 
 - Total Employees
 - Active Employees
 - Average Age
 - Average Years at Company
 
-### Visuals
+**Business Insights**
 
-- Job Satisfaction vs Monthly Income
-- Gender Composition
-- Employee Distribution by Marital Status
-- Income Distribution by Experience Level
-- Workforce Matrix
+- Workforce Distribution
+- Department Composition
+- Gender Diversity
+- Experience Levels
+- Marital Status Distribution
 
 ---
 
-## 📉 3. Attrition Analysis
+## 3️⃣ Attrition Analysis
 
-Identifies employee turnover trends and key attrition drivers.
+Identifies employee turnover patterns and retention challenges.
 
-### KPIs
+**Key KPIs**
 
 - Total Attrition
 - Attrition Rate
 - Average Exit Age
 - Average Exit Income
 
-### Visuals
+**Business Insights**
 
 - Attrition by Salary Band
-- Employee Status Distribution
 - Attrition by Job Level
-- Business Travel Analysis
-- Work-Life Balance Analysis
+- Business Travel Impact
+- Work-Life Balance
+- Employee Status Distribution
 
 ---
 
-## 💰 4. Compensation Analysis
+## 4️⃣ Compensation Analysis
 
-Provides insights into salary structure and payroll distribution.
+Analyzes salary structure across the organization.
 
-### KPIs
+**Key KPIs**
 
 - Average Annual Salary
 - Highest Salary
 - Lowest Salary
 - Average Monthly Rate
 
-### Visuals
+**Business Insights**
 
-- Average Income by Department
-- Average Income by Job Role
-- Salary Hike Achievement
-- Payroll Contribution by Salary Band
-- Department Salary Ranking
+- Department Salary Analysis
+- Job Role Salary Comparison
+- Salary Band Distribution
+- Compensation Trends
 
 ---
 
-## ⭐ 5. Performance Analysis
+## 5️⃣ Performance Analysis
 
-Analyzes employee productivity, satisfaction, and performance metrics.
+Measures employee productivity and organizational performance.
 
-### KPIs
+**Key KPIs**
 
 - Average Performance Rating
-- Job Satisfaction
-- Work-Life Balance
-- Average Training Sessions
+- Average Job Satisfaction
+- Average Work-Life Balance
+- Average Environment Satisfaction
 
-### Visuals
+**Business Insights**
 
-- Work-Life Balance by Department
-- Job Involvement by Gender
-- Performance Score
-- Average Performance by Age Group
-- Average Experience by Job Role
+- Performance by Department
+- Job Involvement
+- Satisfaction Analysis
+- Training Effectiveness
+- Employee Productivity
 
 ---
 
-## 💡 6. Key Insights & Recommendations
+## 6️⃣ Key Insights & Recommendations
 
-Summarizes business findings and strategic HR recommendations.
+Summarizes major business findings and strategic recommendations.
 
-### KPIs
+**Key KPIs**
 
 - Retention Rate
 - Average Promotion Gap
-- Overtime Employee %
+- Overtime Employees %
 - Average Job Involvement
 
-### Sections
+Provides business recommendations to improve:
 
-- Top Business Insights
-- Strategic Recommendations
-- Department Performance Summary
-
----
-
-# 🛠 Technologies Used
-
-| Tool | Purpose |
-|------|----------|
-| Power BI | Dashboard Development |
-| SQL | Data Storage & Querying |
-| Power Query | Data Cleaning & Transformation |
-| DAX | Business Calculations |
-| Data Modeling | Star Schema Relationships |
+- Employee Retention
+- Workforce Planning
+- Compensation Strategy
+- Employee Engagement
 
 ---
 
-# 📈 Key Features
+# 📊 DAX Measures
 
-- Interactive Dashboard Navigation
-- Dynamic KPI Cards
-- Advanced DAX Measures
-- Professional UI Design
-- Interactive Filters & Slicers
-- Executive Reporting
-- HR Business Insights
-- Data Modeling with Star Schema
-- Responsive Visual Layout
-- Business-Oriented Recommendations
+The dashboard uses dynamic DAX calculations for KPI reporting.
+
+### Workforce
+
+- Total Employees
+- Active Employees
+- Average Age
+- Average Experience
+- Average Years at Company
+
+### Attrition
+
+- Attrition Count
+- Attrition Rate
+- Retention Rate
+
+### Employee Metrics
+
+- Average Job Satisfaction
+- Average Environment Satisfaction
+- Average Work-Life Balance
+- Average Job Involvement
+- Average Promotion Gap
+
+### Compensation
+
+- Average Annual Salary
+- Highest Salary
+- Lowest Salary
+- Average Monthly Rate
+
+---
+
+# 📈 Dashboard Features
+
+- Interactive KPI Cards
+- Dynamic Slicers
+- Professional Report Navigation
+- Custom DAX Measures
+- Interactive Matrix Visuals
+- Gauge Charts
+- Scatter Charts
+- Funnel Charts
+- Business-Oriented Insights
+- Executive Summary Reporting
 
 ---
 
@@ -181,17 +209,12 @@ Summarizes business findings and strategic HR recommendations.
 ```text
 HR-Analytics-Dashboard
 │
-├── Dashboard
-│   └── HR_Analytics_Dashboard.pbix
+├── HR_Analytics_Dashboard.pbix
 │
 ├── Dataset
-│   ├── FactEmployee.csv
-│   ├── DimDepartment.csv
-│   ├── DimEducation.csv
-│   ├── DimJobRole.csv
-│   └── ...
+│   └── HR_Employee_Dataset.xlsx
 │
-├── Images
+├── Screenshots
 │   ├── ExecutiveSummary.png
 │   ├── WorkforceOverview.png
 │   ├── AttritionAnalysis.png
@@ -204,66 +227,72 @@ HR-Analytics-Dashboard
 
 ---
 
-# 📷 Dashboard Preview
+# 📸 Dashboard Preview
 
 ## Executive Summary
 
-![Executive Summary](<img width="1297" height="721" alt="Executive Summary" src="https://github.com/user-attachments/assets/6d6acb40-99a5-4e45-a91b-b9674b22baac" />
+![Executive Summary](<img width="1297" height="721" alt="Executive Summary" src="https://github.com/user-attachments/assets/15febdd0-64c2-4c7a-8751-935e85958fac" />
 )
 
 ---
 
 ## Workforce Overview
 
-![Workforce Overview](Images/Page2.png)
+![Workforce Overview](<img width="1112" height="626" alt="Workforce Overview" src="https://github.com/user-attachments/assets/a905d05e-016e-429c-a87f-6d58f90016c3" />
+)
 
 ---
 
 ## Attrition Analysis
 
-![Attrition Analysis](Images/Page3.png)
+![Attrition Analysis](<img width="1115" height="627" alt="Attrition Analysis" src="https://github.com/user-attachments/assets/ed5b954b-5746-41ea-8504-ac1891834d6a" />
+)
 
 ---
 
 ## Compensation Analysis
 
-![Compensation Analysis](Images/Page4.png)
+![Compensation Analysis](<img width="1113" height="625" alt="Compensation Analysis" src="https://github.com/user-attachments/assets/59591dd8-b796-4842-88ea-29c7a7906f2b" />
+)
 
 ---
 
 ## Performance Analysis
 
-![Performance Analysis](Images/Page5.png)
+![Performance Analysis](<img width="1108" height="624" alt="Performance Analysis" src="https://github.com/user-attachments/assets/f07f73b3-b275-4659-89bf-36aabebe091e" />
+)
 
 ---
 
 ## Key Insights & Recommendations
 
-![Insights](Images/Page<img width="1297" height="721" alt="Executive Summary" src="https://github.com/user-attachments/assets/c26da4be-2985-4f8b-94f8-46272aac52a6" />
-6.png)
+![Key Insights](<img width="1112" height="636" alt="Key Insights   Recommendations" src="https://github.com/user-attachments/assets/e28445d0-0344-4ba5-a424-aab0b0e1b9f4" />
+)
 
 ---
 
-# 📌 Business Insights
+# 💼 Skills Demonstrated
 
-- Workforce consists of approximately **1.47K employees** across multiple departments.
-- Attrition rate is approximately **16%**, indicating opportunities to improve retention.
-- Sales and Human Resources show comparatively higher attrition rates.
-- Employees with lower work-life balance are more likely to leave.
-- Higher overtime participation is associated with increased employee turnover.
-- Employee satisfaction and job involvement positively influence performance ratings.
-- Salary and promotion opportunities significantly impact employee retention.
+- Business Intelligence
+- Data Visualization
+- Dashboard Design
+- SQL Querying
+- DAX Calculations
+- Power Query
+- Data Cleaning
+- Data Modeling
+- HR Analytics
+- Executive Reporting
 
 ---
 
-# 🚀 Future Improvements
+# 🚀 Future Enhancements
 
-- Predictive Attrition using Machine Learning
 - Drill-through Reports
-- Department-Level Performance Scorecards
 - Row-Level Security (RLS)
 - Power BI Service Deployment
 - Automated Data Refresh
+- Predictive Attrition Analysis using Machine Learning
 
 ---
 
@@ -271,14 +300,6 @@ HR-Analytics-Dashboard
 
 **Lokesh**
 
-Data Analyst | Power BI Developer | SQL | DAX | Business Intelligence
+Aspiring Data Analyst | Power BI Developer
 
-📧 Email: lokeshjalla10@gmail.com
-
-🔗 LinkedIn: https://www.linkedin.com/in/lokesh-jalla/
-
-🔗 GitHub: https://github.com/lokesh-Jalla
-
----
-
-# ⭐ If you found this project helpful, consider giving it a Star!
+If you found this project helpful, consider giving it a ⭐ on GitHub.
