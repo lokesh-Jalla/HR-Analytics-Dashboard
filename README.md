@@ -209,7 +209,8 @@ HR-Analytics-Dashboard
 
 ## Executive Summary
 
-![Executive Summary](Images/Page1.png)
+![Executive Summary](<img width="1297" height="721" alt="Executive Summary" src="https://github.com/user-attachments/assets/6d6acb40-99a5-4e45-a91b-b9674b22baac" />
+)
 
 ---
 
@@ -239,7 +240,8 @@ HR-Analytics-Dashboard
 
 ## Key Insights & Recommendations
 
-![Insights](Images/Page6.png)
+![Insights](Images/Page<img width="1297" height="721" alt="Executive Summary" src="https://github.com/user-attachments/assets/c26da4be-2985-4f8b-94f8-46272aac52a6" />
+6.png)
 
 ---
 
