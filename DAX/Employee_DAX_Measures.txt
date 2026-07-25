@@ -1,0 +1,39 @@
+1. Total Employees = 
+COUNTROWS(FactEmployee)
+
+2. Active Employees = 
+CALCULATE(
+    COUNTROWS(FactEmployee),
+    FactEmployee[Attrition] = FALSE()
+)
+
+3. Attrition Count = 
+CALCULATE(
+    COUNTROWS(FactEmployee),
+    FactEmployee[Attrition] = TRUE()
+) 
+
+4. Attrition Rate = 
+DIVIDE(
+    [Attrition Count],
+    [Total Employees],
+    2
+) 
+
+5. Average Age = 
+AVERAGE(FactEmployee[Age]) 
+
+6. Average Environment Satisfaction = 
+AVERAGE(FactEmployee[EnvironmentSatisfaction]) 
+
+7. Average Experience = 
+AVERAGE(FactEmployee[TotalWorkingYears]) 
+
+8. Average Job Satisfaction = 
+AVERAGE(FactEmployee[JobSatisfaction]) 
+
+9. Average Work Life Balance = 
+AVERAGE(FactEmployee[WorkLifeBalance]) 
+
+10. Average Years at Company = 
+AVERAGE(FactEmployee[YearsAtCompany])
